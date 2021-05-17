@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Chewy Champ</string>
+    <string name="logo_content_description">Chewy Logo</string>
+
+
+
+
+   <string name="hint_username">Username</string>
+<string name="hint_password">Password</string>
+<string name="button_next">Next</string>
+<string name="button_cancel">Cancel</string>
+<string name="error_password">Password must contain at least 8 characters.</string>
+<string name="filter_title">Filter</string>
+<string name="search_title">Search</string>
+<string name="product_title">Title</string>
+<string name="product_description">Secondary text</string>
+
+
+    <!-- toolbar icons-->
+    <string name="settings_icon">Settings</string>
+    <string name="search_icon">Search</string>
+    <!-- Cardview strings-->
+    <string name="hamburger">Hamburger</string>
+    <string name="hamburger_chews">Hamburger Chews 26x</string>
+</resources>
