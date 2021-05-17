@@ -36,7 +36,7 @@
                 android:id="@+id/hamChews"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/shr_product_description"
+                android:text="Hamburger 26 Chews"
                 android:textAppearance="?attr/textAppearanceBody2" />
         </LinearLayout>
     </LinearLayout>
