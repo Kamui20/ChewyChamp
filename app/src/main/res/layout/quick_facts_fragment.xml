@@ -17,39 +17,20 @@
             app:navigationIcon="@drawable/ic_baseline_menu_24"
             app:title="@string/app_name"/>
     </com.google.android.material.appbar.AppBarLayout>
-
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="200dp"
-        android:layout_height="180dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="70dp"
-        app:cardBackgroundColor="?attr/colorPrimaryDark"
-        app:cardCornerRadius="4dp">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="@color/white"
-            android:orientation="vertical"
-            android:padding="8dp">
-
-    <TextView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="2dp"
-        android:text="@string/hamburger"
-        android:textAppearance="?attr/textAppearanceHeadline6"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:text="@string/hamburger_chews"
-            android:textAppearance="?attr/textAppearanceBody2"/>
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/productGridBackgroundColor"
+        android:paddingStart="@dimen/facts_grid_spacing"
+        android:paddingEnd="@dimen/facts_grid_spacing"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.core.widget.NestedScrollView>
+
 </FrameLayout>

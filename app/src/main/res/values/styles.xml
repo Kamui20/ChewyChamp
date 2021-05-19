@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
+    <style name="Theme.ChewyChamp" parent="Theme.MaterialComponents.Light.NoActionBar"></style>
 
     <style name="Widget.ChewyChamp.Toolbar" parent="Widget.AppCompat.Toolbar">
         <item name="android:background">?attr/colorAccent</item>
-        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
-        <item name="windowActionBar">false</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
 
     </style>
 

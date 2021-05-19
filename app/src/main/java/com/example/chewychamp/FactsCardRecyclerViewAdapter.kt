@@ -9,7 +9,7 @@ import com.example.chewychamp.FactsEntry
 /**
  * Adapter used to show a simple grid of products.
  */
-class ProductCardRecyclerViewAdapter(private val productList: List<FactsEntry>) : RecyclerView.Adapter<FactsCardViewHolder>() {
+class FactsCardRecyclerViewAdapter(private val factsList: List<FactsEntry>) : RecyclerView.Adapter<FactsCardViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FactsCardViewHolder {
         val layoutView = LayoutInflater.from(parent.context).inflate(R.layout.info_card, parent, false)
@@ -21,6 +21,6 @@ class ProductCardRecyclerViewAdapter(private val productList: List<FactsEntry>) 
     }
 
     override fun getItemCount(): Int {
-        return productList.size
+        return factsList.size
     }
 }
